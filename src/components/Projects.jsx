@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "CI/CD Pipeline Automation",
       description: "Built comprehensive CI/CD pipelines reducing deployment time by 70% and eliminating manual errors through full automation.",
-      technologies: ["Jenkins", "Docker", "GitLab CI", "ArgoCD"],
+      technologies: ["GitHUb Action", "Docker", "Kubernetes", "Helm"],
       features: ["Zero-downtime deployments", "Automated testing", "Rollback capability"],
       icon: "🚀"
     },

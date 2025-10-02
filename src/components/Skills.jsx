@@ -6,32 +6,32 @@ const Skills = () => {
       title: "Cloud Platforms",
       skills: [
         { name: "AWS", level: 95 },
-        { name: "Azure", level: 85 },
-        { name: "Google Cloud", level: 80 }
+        // { name: "Azure", level: 85 },
+        // { name: "Google Cloud", level: 80 }
       ]
     },
     {
       title: "DevOps Tools",
       skills: [
-        { name: "Docker", level: 90 },
-        { name: "Kubernetes", level: 85 },
-        { name: "Jenkins", level: 88 }
+        { name: "Docker", level: 55 },
+        { name: "Kubernetes", level: 50 },
+        { name: "GitHub Action", level: 55 }
       ]
     },
     {
       title: "Infrastructure as Code",
       skills: [
-        { name: "Terraform", level: 92 },
-        { name: "CloudFormation", level: 85 },
-        { name: "Ansible", level: 80 }
+        { name: "Terraform", level: 75 },
+        // { name: "CloudFormation", level: 85 },
+        { name: "Ansible", level: 55 }
       ]
     },
     {
       title: "Programming",
       skills: [
-        { name: "Python", level: 88 },
-        { name: "Bash/Shell", level: 90 },
-        { name: "YAML/JSON", level: 95 }
+        { name: "Java", level: 50 },
+        { name: "Bash/Shell", level: 65 },
+        { name: "Javascript", level: 60 }
       ]
     }
   ];
@@ -84,7 +84,7 @@ const Skills = () => {
               <span className="text-white text-2xl">🏆</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Certifications</h3>
-            <p className="text-gray-600">AWS Solutions Architect, Azure DevOps Engineer</p>
+            {/* <p className="text-gray-600">AWS Solutions Architect, Azure DevOps Engineer</p> */}
           </div>
           
           <div className="text-center">
@@ -92,7 +92,7 @@ const Skills = () => {
               <span className="text-white text-2xl">⚡</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Performance</h3>
-            <p className="text-gray-600">99.9% uptime, 50% faster deployments</p>
+            <p className="text-gray-600">70.1% uptime, 50% faster deployments</p>
           </div>
           
           <div className="text-center">

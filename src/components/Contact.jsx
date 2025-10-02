@@ -62,49 +62,12 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">📧</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">gabrielomokaro@outlook.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">💼</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/gabriel-omokaro-b6b57a32b/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
-                    gabriel-omokaro-b6b57a32b
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">🐙</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">GitHub</h4>
-                  <a href="https://github.com/omokarogabriel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
-                    omokarogabriel
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">📍</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">Available for remote work worldwide</p>
-                </div>
+            <div className="bg-white/10 p-6 rounded-lg h-full flex flex-col justify-center">
+              <div className="flex flex-wrap gap-4 text-sm font-semibold">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-4 h-4 inline mr-1" />gabrielomokaro@outlook.com</span>
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-4 h-4 inline mr-1" />LinkedIn</span>
+                <span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-4 h-4 inline mr-1" />GitHub</span>
+                <span><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" className="w-4 h-4 inline mr-1" />Remote Available</span>
               </div>
             </div>
           </div>

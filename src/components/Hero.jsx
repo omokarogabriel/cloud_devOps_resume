@@ -20,22 +20,22 @@ const Hero = () => {
               <a href="#projects" className="btn-primary text-center">
                 View My Work
               </a>
-              <a href="/resume.txt" download="Gabriel_Omokaro_Resume.txt" className="btn-secondary text-center">
+              {/* <a href="/resume.txt" download="Gabriel_Omokaro_Resume.txt" className="btn-secondary text-center">
                 📄 Download Resume
-              </a>
+              </a> */}
             </div>
 
             <div className="flex space-x-6 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">5+</div>
+                <div className="text-2xl font-bold text-primary-600">1</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">50+</div>
+                <div className="text-2xl font-bold text-primary-600">3</div>
                 <div className="text-sm text-gray-600">Projects Deployed</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">99.9%</div>
+                <div className="text-2xl font-bold text-primary-600">70.1%</div>
                 <div className="text-sm text-gray-600">Uptime Achieved</div>
               </div>
             </div>
@@ -45,17 +45,17 @@ const Hero = () => {
             <div className="w-full h-96 bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl flex items-center justify-center">
               <div className="text-white text-center space-y-4">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
+                  src="https://cdn-icons-png.flaticon.com/512/4215/4215831.png"
                   alt="Cloud Computing" 
-                  className="w-24 h-24 mx-auto filter brightness-0 invert"
+                  className="w-32 h-32 mx-auto filter brightness-0 invert"
                 />
                 <div className="text-xl font-semibold">DevOps Engineer</div>
                 <div className="text-sm opacity-90">Cloud • Automation • Scale</div>
               </div>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-2xl">
+            {/* <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-2xl">
               🚀
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

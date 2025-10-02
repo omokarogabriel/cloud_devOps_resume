@@ -11,7 +11,7 @@ const About = () => {
                 About Me
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                I'm a passionate DevOps and Cloud Engineer with 5+ years of experience in designing, 
+                I'm a passionate DevOps and Cloud Engineer with 1 year of experience in designing, 
                 implementing, and maintaining scalable cloud infrastructure. I specialize in automation, 
                 CI/CD pipelines, and infrastructure as code.
               </p>
@@ -54,25 +54,25 @@ const About = () => {
             <div className="bg-primary-50 p-6 rounded-xl">
               <div className="text-3xl mb-2">☁️</div>
               <h3 className="font-semibold text-gray-900 mb-2">Cloud Platforms</h3>
-              <p className="text-sm text-gray-600">AWS, Azure, GCP certified</p>
+              <p className="text-sm text-gray-600">AWS</p>
             </div>
             
             <div className="bg-green-50 p-6 rounded-xl">
               <div className="text-3xl mb-2">🔧</div>
               <h3 className="font-semibold text-gray-900 mb-2">DevOps Tools</h3>
-              <p className="text-sm text-gray-600">Docker, Kubernetes, Jenkins</p>
+              <p className="text-sm text-gray-600">Docker, Kubernetes, GitHub Action</p>
             </div>
             
             <div className="bg-purple-50 p-6 rounded-xl">
               <div className="text-3xl mb-2">📊</div>
               <h3 className="font-semibold text-gray-900 mb-2">Monitoring</h3>
-              <p className="text-sm text-gray-600">Prometheus, Grafana, ELK</p>
+              <p className="text-sm text-gray-600">Prometheus, Grafana, Cloudwatch</p>
             </div>
             
             <div className="bg-orange-50 p-6 rounded-xl">
               <div className="text-3xl mb-2">🔒</div>
               <h3 className="font-semibold text-gray-900 mb-2">Security</h3>
-              <p className="text-sm text-gray-600">DevSecOps, compliance</p>
+              {/* <p className="text-sm text-gray-600">DevSecOps, compliance</p> */}
             </div>
           </div>
         </div>
