@@ -63,11 +63,23 @@ const Contact = () => {
             </div>
 
             <div className="bg-white/10 p-6 rounded-lg h-full flex flex-col justify-center">
-              <div className="flex flex-wrap gap-4 text-sm font-semibold">
-                <span><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-4 h-4 inline mr-1" />gabrielomokaro@outlook.com</span>
-                <span><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-4 h-4 inline mr-1" />LinkedIn</span>
-                <span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-4 h-4 inline mr-1" />GitHub</span>
-                <span><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" className="w-4 h-4 inline mr-1" />Remote Available</span>
+              <div className="flex flex-col gap-6 text-lg font-semibold">
+                <a href="mailto:gabrielomokaro@outlook.com" className="flex items-center hover:text-primary-600 transition-colors">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-6 h-6 mr-3" />
+                  gabrielomokaro@outlook.com
+                </a>
+                <a href="https://linkedin.com/in/gabriel-omokaro-b6b57a32b" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary-600 transition-colors">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-6 h-6 mr-3" />
+                  LinkedIn
+                </a>
+                <a href="https://github.com/omokarogabriel" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary-600 transition-colors">
+                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-6 h-6 mr-3" />
+                  GitHub
+                </a>
+                <span className="flex items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" className="w-6 h-6 mr-3" />
+                  Remote Available
+                </span>
               </div>
             </div>
           </div>
