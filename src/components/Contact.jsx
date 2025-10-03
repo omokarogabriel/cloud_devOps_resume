@@ -62,24 +62,49 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="bg-white/10 p-6 rounded-lg h-full flex flex-col justify-center">
-              <div className="flex flex-col gap-6 text-lg font-semibold">
-                <a href="mailto:gabrielomokaro@outlook.com" className="flex items-center hover:text-primary-600 transition-colors">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-6 h-6 mr-3" />
-                  gabrielomokaro@outlook.com
-                </a>
-                <a href="https://linkedin.com/in/gabriel-omokaro-b6b57a32b" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary-600 transition-colors">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-6 h-6 mr-3" />
-                  LinkedIn
-                </a>
-                <a href="https://github.com/omokarogabriel" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary-600 transition-colors">
-                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-6 h-6 mr-3" />
-                  GitHub
-                </a>
-                <span className="flex items-center">
-                  <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" className="w-6 h-6 mr-3" />
-                  Remote Available
-                </span>
+            <div className="space-y-12">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Email</h4>
+                  <p className="text-gray-600">gabrielomokaro@outlook.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/gabriel-omokaro-b6b57a32b/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+                    gabriel-omokaro-b6b57a32b
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">GitHub</h4>
+                  <a href="https://github.com/omokarogabriel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+                    omokarogabriel
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-xl">📍</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Location</h4>
+                  <p className="text-gray-600">Available for remote work worldwide</p>
+                </div>
               </div>
             </div>
           </div>

@@ -2,12 +2,20 @@ import React from 'react';
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Multi-Cloud Infrastructure",
-      description: "Designed and implemented a multi-cloud infrastructure spanning AWS, Azure, and GCP with automated failover and disaster recovery.",
-      technologies: ["Terraform", "Kubernetes", "AWS", "Azure", "GCP"],
-      features: ["99.99% uptime", "Auto-scaling", "Cost optimization"],
-      icon: "☁️"
+    // {
+    //   title: "Multi-Cloud Infrastructure",
+    //   description: "Designed and implemented a multi-cloud infrastructure spanning AWS, Azure, and GCP with automated failover and disaster recovery.",
+    //   technologies: ["Terraform", "Kubernetes", "AWS", "Azure", "GCP"],
+    //   features: ["99.99% uptime", "Auto-scaling", "Cost optimization"],
+    //   icon: "☁️"
+    // },
+      {
+      title: "Microservices EKS Infrastructure",
+      description: "Designed and implemented a microservices Helm chart into an EKS Cluster.",
+      technologies: ["Terraform", "Kubernetes"],
+      features: ["65.99% uptime", "Auto-scaling", "Cost optimization"],
+      icon: "☁️",
+      link: "https://github.com/omokarogabriel/eks_microservices"
     },
     {
       title: "CI/CD Pipeline Automation",
@@ -16,31 +24,39 @@ const Projects = () => {
       features: ["Zero-downtime deployments", "Automated testing", "Rollback capability"],
       icon: "🚀"
     },
-    {
-      title: "Microservices Monitoring",
-      description: "Implemented comprehensive monitoring and observability stack for microservices architecture serving 1M+ daily users.",
-      technologies: ["Prometheus", "Grafana", "ELK Stack", "Jaeger"],
-      features: ["Real-time alerts", "Performance metrics", "Distributed tracing"],
-      icon: "📊"
-    },
+    // {
+    //   title: "Microservices Monitoring",
+    //   description: "Implemented comprehensive monitoring and observability stack for microservices architecture serving 1M+ daily users.",
+    //   technologies: ["Prometheus", "Grafana", "ELK Stack", "Jaeger"],
+    //   features: ["Real-time alerts", "Performance metrics", "Distributed tracing"],
+    //   icon: "📊"
+    // },
     {
       title: "Infrastructure as Code",
-      description: "Migrated legacy infrastructure to IaC, improving consistency and reducing provisioning time from days to minutes.",
-      technologies: ["Terraform", "Ansible", "CloudFormation", "Helm"],
+      description: "Creating an infrastructure using IaC, improving consistency and reducing provisioning time from days to minutes.",
+      technologies: ["Terraform", "Helm"],
       features: ["Version controlled", "Reproducible", "Self-documenting"],
       icon: "🏗️"
     },
+    // {
+    //   title: "Security & Compliance",
+    //   description: "Implemented DevSecOps practices and compliance automation achieving SOC2 and ISO27001 certifications.",
+    //   technologies: ["Vault", "SAST/DAST", "Policy as Code", "Compliance"],
+    //   features: ["Automated security scans", "Policy enforcement", "Audit trails"],
+    //   icon: "🔒"
+    // },
     {
-      title: "Security & Compliance",
-      description: "Implemented DevSecOps practices and compliance automation achieving SOC2 and ISO27001 certifications.",
-      technologies: ["Vault", "SAST/DAST", "Policy as Code", "Compliance"],
-      features: ["Automated security scans", "Policy enforcement", "Audit trails"],
-      icon: "🔒"
+      title: "S3 Buckets Management",
+      description: "Implemented comprehensive S3 bucket configurations with CloudFront distribution for static website hosting and secure private storage.",
+      technologies: ["AWS S3", "CloudFront", "IAM Policies"],
+      features: ["Public static website", "Private bucket security", "Permission management"],
+      icon: "🪣",
+      link: "https://github.com/omokarogabriel/Third-semester-assessment"
     },
     {
       title: "Cost Optimization",
       description: "Reduced cloud infrastructure costs by 40% through rightsizing, reserved instances, and automated resource management.",
-      technologies: ["AWS Cost Explorer", "CloudWatch", "Spot Instances"],
+      technologies: ["AWS Cost Explorer", "CloudWatch"],
       features: ["40% cost reduction", "Resource optimization", "Budget alerts"],
       icon: "💰"
     }
@@ -82,7 +98,7 @@ const Projects = () => {
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
@@ -92,6 +108,19 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              
+              {project.link && (
+                <div className="mt-4">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary-600 hover:text-primary-700 text-sm font-medium underline"
+                  >
+                    View Repository →
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

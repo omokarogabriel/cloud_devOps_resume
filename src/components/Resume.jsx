@@ -68,7 +68,7 @@ const Resume = () => {
             <div class="content">
               <div class="section">
                 <h3>Professional Summary</h3>
-                <p>Experienced DevOps and Cloud Engineer with <strong>5+ years</strong> of expertise in designing, implementing, and maintaining scalable cloud infrastructure. Specialized in automation, CI/CD pipelines, and Infrastructure as Code with a proven track record of achieving <strong>99.9% uptime</strong> and reducing deployment times by <strong>70%</strong>.</p>
+                <p>DevOps and Cloud Engineer with <strong>1+ year</strong> of expertise in designing, implementing, and maintaining scalable cloud infrastructure. Specialized in automation, CI/CD pipelines, and Infrastructure as Code with a proven track record of achieving <strong>65.9% uptime</strong> and reducing deployment times by <strong>70%</strong>.</p>
               </div>
               
               <div class="section">
@@ -78,24 +78,22 @@ const Resume = () => {
                     <h4>🌩️ Cloud Platforms</h4>
                     <ul>
                       <li>• AWS (Solutions Architect)</li>
-                      <li>• Azure (DevOps Expert)</li>
-                      <li>• Google Cloud Platform</li>
+
                     </ul>
                   </div>
                   <div class="skill-category">
                     <h4>⚙️ DevOps Tools</h4>
                     <ul>
                       <li>• Docker & Kubernetes</li>
-                      <li>• Jenkins & GitLab CI</li>
+                      <li>• Github Actions</li>
                       <li>• Terraform & Ansible</li>
                     </ul>
                   </div>
                   <div class="skill-category">
                     <h4>📈 Monitoring</h4>
                     <ul>
-                      <li>• Prometheus & Grafana</li>
-                      <li>• ELK Stack & Jaeger</li>
-                      <li>• CloudWatch & Azure Monitor</li>
+
+                      <li>• CloudWatch</li>
                     </ul>
                   </div>
                 </div>
@@ -105,30 +103,46 @@ const Resume = () => {
                 <h3>Professional Experience</h3>
                 <div class="experience-item">
                   <div class="experience-header">
-                    <h4 class="experience-title">Senior DevOps Engineer</h4>
-                    <span class="experience-date">2021 - Present</span>
+                    <h4 class="experience-title">EKS Microservices</h4>
+                    <span class="experience-date">2025 - Present</span>
                   </div>
-                  <p class="experience-company">Tech Solutions Inc.</p>
+                  <p class="experience-company">AltSchool Africa</p>
                   <ul>
-                    <li>• Designed multi-cloud infrastructure spanning AWS, Azure, and GCP</li>
-                    <li>• Built CI/CD pipelines reducing deployment time by 70%</li>
-                    <li>• Achieved 99.9% uptime through automated monitoring</li>
-                    <li>• Reduced cloud costs by 40% through optimization</li>
+                    <li>• Deployed microservices architecture on Amazon EKS</li>
+                    <li>• Implemented Kubernetes orchestration with Helm charts</li>
+                    <li>• Configured CI/CD pipelines for automated deployments</li>
+                    <li>• View Project Repository: github.com/omokarogabriel/eks_microservices</li>
                   </ul>
                 </div>
                 
                 <div class="experience-item">
                   <div class="experience-header">
                     <h4 class="experience-title">Cloud Infrastructure Engineer</h4>
-                    <span class="experience-date">2019 - 2021</span>
+                    <span class="experience-date">2025 - Present</span>
                   </div>
-                  <p class="experience-company">Digital Innovations Ltd.</p>
+                  <p class="experience-company">AltSchool Africa</p>
                   <ul>
-                    <li>• Migrated legacy infrastructure to cloud-native solutions</li>
+
                     <li>• Implemented Infrastructure as Code using Terraform</li>
-                    <li>• Led DevSecOps initiatives achieving SOC2 certification</li>
+
                   </ul>
                 </div>
+
+                  <div class="experience-item">
+                  <div class="experience-header">
+                    <h4 class="experience-title">S3 Buckets</h4>
+                    <span class="experience-date">2025 - Present</span>
+                  </div>
+                  <p class="experience-company">AltSchool Africa</p>
+                  <ul>
+
+                  <li>• Creating a public static website with permission and CloudFront </li>
+                  <li>• Creating a private s3 bucket with get,put permission and no delete</li>
+                  <li>• Creating a private s3 bucket with list only permission and no delete </li>
+                  <li>• View Project Repository: github.com/omokarogabriel/Third-semester-assessment</li>
+                  </ul>
+                </div>
+
               </div>
               
               <div class="section">
@@ -144,7 +158,7 @@ const Resume = () => {
                   <div class="achievement-item">
                     <span class="achievement-icon">⚡</span>
                     <div>
-                      <h4 class="achievement-title">50+ Projects</h4>
+                      <h4 class="achievement-title">3+ Projects</h4>
                       <p class="achievement-desc">Successfully delivered solutions</p>
                     </div>
                   </div>
@@ -155,43 +169,19 @@ const Resume = () => {
                       <p class="achievement-desc">Cloud spending optimization</p>
                     </div>
                   </div>
-                  <div class="achievement-item">
-                    <span class="achievement-icon">🔒</span>
-                    <div>
-                      <h4 class="achievement-title">Security Certified</h4>
-                      <p class="achievement-desc">SOC2 & ISO27001 compliance</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
               
               <div class="section">
                 <h3>Certifications</h3>
-                <div class="certifications-grid">
-                  <div class="cert-item">
-                    <span class="cert-icon">🏅</span>
-                    <span>AWS Solutions Architect Professional</span>
-                  </div>
-                  <div class="cert-item">
-                    <span class="cert-icon">🏅</span>
-                    <span>Azure DevOps Engineer Expert</span>
-                  </div>
-                  <div class="cert-item">
-                    <span class="cert-icon">🏅</span>
-                    <span>Certified Kubernetes Administrator</span>
-                  </div>
-                  <div class="cert-item">
-                    <span class="cert-icon">🏅</span>
-                    <span>Terraform Associate</span>
-                  </div>
-                </div>
               </div>
               
               <div class="section">
                 <h3>Education</h3>
                 <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem;">
-                  <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Bachelor of Science in Computer Science</h4>
-                  <p style="color: #2563eb; font-weight: 500; margin-bottom: 0.25rem;">University of Technology</p>
+                  <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Higher Diploma in Computer Science</h4>
+                  <p style="color: #2563eb; font-weight: 500; margin-bottom: 0.25rem;">Yaba College of Technology</p>
                   <p style="color: #6b7280;">2014 - 2018</p>
                 </div>
               </div>
@@ -222,11 +212,31 @@ const Resume = () => {
           <div className="text-center md:text-left">
             <h1 className="text-4xl font-bold mb-2">Gabriel Omokaro</h1>
             <h2 className="text-xl opacity-90 mb-4">DevOps & Cloud Engineer</h2>
-            <div className="flex flex-col gap-2 text-sm font-bold">
-              <span><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-4 h-4 inline mr-2" />gabrielomokaro@outlook.com</span>
-              <span><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-4 h-4 inline mr-2" />LinkedIn</span>
-              <span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-4 h-4 inline mr-2" />GitHub</span>
-              <span><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" className="w-4 h-4 inline mr-2" />Remote Available</span>
+            <div className="flex flex-col gap-3 text-sm font-bold">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-sm">📧</span>
+                </div>
+                <span>gabrielomokaro@outlook.com</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-sm">💼</span>
+                </div>
+                <span>LinkedIn</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-sm">🔗</span>
+                </div>
+                <span>GitHub</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-sm">📍</span>
+                </div>
+                <span>Remote Available</span>
+              </div>
             </div>
           </div>
         </div>
@@ -240,10 +250,10 @@ const Resume = () => {
             Professional Summary
           </h3>
           <p className="text-gray-600 leading-relaxed">
-            Experienced DevOps and Cloud Engineer with <strong>5+ years</strong> of expertise in designing, 
+            DevOps and Cloud Engineer with <strong>1+ year</strong> of expertise in designing, 
             implementing, and maintaining scalable cloud infrastructure. Specialized in automation, 
             CI/CD pipelines, and Infrastructure as Code with a proven track record of achieving 
-            <strong> 99.9% uptime</strong> and reducing deployment times by <strong>70%</strong>.
+            <strong> 65.9% uptime</strong> and reducing deployment times by <strong>70%</strong>.
           </p>
         </section>
 
@@ -257,24 +267,24 @@ const Resume = () => {
               <h4 className="font-semibold text-blue-800 mb-3">🌩️ Cloud Platforms</h4>
               <ul className="text-sm space-y-1 text-gray-700">
                 <li>• AWS (Solutions Architect)</li>
-                <li>• Azure (DevOps Expert)</li>
-                <li>• Google Cloud Platform</li>
+                {/* <li>• Azure (DevOps Expert)</li> */}
+                {/* <li>• Google Cloud Platform</li> */}
               </ul>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
               <h4 className="font-semibold text-green-800 mb-3">⚙️ DevOps Tools</h4>
               <ul className="text-sm space-y-1 text-gray-700">
                 <li>• Docker & Kubernetes</li>
-                <li>• Jenkins & GitLab CI</li>
+                <li>• Github Actions</li>
                 <li>• Terraform & Ansible</li>
               </ul>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg">
               <h4 className="font-semibold text-purple-800 mb-3">📈 Monitoring</h4>
               <ul className="text-sm space-y-1 text-gray-700">
-                <li>• Prometheus & Grafana</li>
-                <li>• ELK Stack & Jaeger</li>
-                <li>• CloudWatch & Azure Monitor</li>
+                {/* <li>• Prometheus & Grafana</li> */}
+                {/* <li>• ELK Stack & Jaeger</li> */}
+                <li>• CloudWatch</li>
               </ul>
             </div>
           </div>
@@ -288,30 +298,47 @@ const Resume = () => {
           <div className="space-y-6">
             <div className="border-l-4 border-primary-600 pl-6">
               <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold text-gray-800">Senior DevOps Engineer</h4>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2021 - Present</span>
+                <h4 className="text-xl font-semibold text-gray-800">EKS Microservices</h4>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
               </div>
-              <p className="text-primary-600 font-medium mb-3">Tech Solutions Inc.</p>
+              <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
               <ul className="text-gray-600 space-y-1">
-                <li>• Designed multi-cloud infrastructure spanning AWS, Azure, and GCP</li>
-                <li>• Built CI/CD pipelines reducing deployment time by 70%</li>
-                <li>• Achieved 99.9% uptime through automated monitoring</li>
-                <li>• Reduced cloud costs by 40% through optimization</li>
+                <li>• Deployed microservices architecture on Amazon EKS</li>
+                <li>• Implemented Kubernetes orchestration with Helm charts</li>
+                <li>• Configured CI/CD pipelines for automated deployments</li>
+                <li>• <a href="https://github.com/omokarogabriel/eks_microservices" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline">View Project Repository →</a></li>
               </ul>
             </div>
 
             <div className="border-l-4 border-gray-300 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-xl font-semibold text-gray-800">Cloud Infrastructure Engineer</h4>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2019 - 2021</span>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
               </div>
-              <p className="text-primary-600 font-medium mb-3">Digital Innovations Ltd.</p>
+              <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
               <ul className="text-gray-600 space-y-1">
-                <li>• Migrated legacy infrastructure to cloud-native solutions</li>
+                {/* <li>• Migrated legacy infrastructure to cloud-native solutions</li> */}
                 <li>• Implemented Infrastructure as Code using Terraform</li>
-                <li>• Led DevSecOps initiatives achieving SOC2 certification</li>
+                {/* <li>• Led DevSecOps initiatives achieving SOC2 certification</li> */}
               </ul>
             </div>
+
+
+
+            <div className="border-l-4 border-primary-600 pl-6">
+              <div className="flex justify-between items-start mb-2">
+                <h4 className="text-xl font-semibold text-gray-800">S3 Buckets</h4>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
+              </div>
+              <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
+              <ul className="text-gray-600 space-y-1">
+                <li>• Creating a public static website with permission and CloudFront </li>
+                <li>• Creating a private s3 bucket with get,put permission and no delete</li>
+                <li>• Creating a private s3 bucket with list only permission and no delete </li>
+                <li>• <a href="https://github.com/omokarogabriel/Third-semester-assessment" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline">View Project Repository →</a></li>
+              </ul>
+            </div>
+            
           </div>
         </section>
 
@@ -331,7 +358,7 @@ const Resume = () => {
             <div className="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
               <span className="text-2xl">⚡</span>
               <div>
-                <h4 className="font-semibold text-gray-800">50+ Projects</h4>
+                <h4 className="font-semibold text-gray-800">3+ Projects</h4>
                 <p className="text-sm text-gray-600">Successfully delivered solutions</p>
               </div>
             </div>
@@ -342,13 +369,13 @@ const Resume = () => {
                 <p className="text-sm text-gray-600">Cloud spending optimization</p>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-purple-50 p-4 rounded-lg">
+            {/* <div className="flex items-center gap-3 bg-purple-50 p-4 rounded-lg">
               <span className="text-2xl">🔒</span>
               <div>
                 <h4 className="font-semibold text-gray-800">Security Certified</h4>
                 <p className="text-sm text-gray-600">SOC2 & ISO27001 compliance</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -357,7 +384,7 @@ const Resume = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-primary-600 pb-2">
             Certifications
           </h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          {/* <div className="grid md:grid-cols-2 gap-4">
             <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg">
               <img src="https://images.credly.com/size/110x110/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="AWS" className="w-6 h-6" />
               <span className="font-medium">AWS Solutions Architect Professional</span>
@@ -374,7 +401,7 @@ const Resume = () => {
               <img src="https://images.credly.com/size/110x110/images/99289602-861e-4929-8277-773e63a2fa6f/image.png" alt="Terraform" className="w-6 h-6" />
               <span className="font-medium">Terraform Associate</span>
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* Education */}
@@ -383,8 +410,8 @@ const Resume = () => {
             Education
           </h3>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Bachelor of Science in Computer Science</h4>
-            <p className="text-primary-600 font-medium mb-1">University of Technology</p>
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Higher Diploma in Computer Science</h4>
+            <p className="text-primary-600 font-medium mb-1">Yaba College of Technology</p>
             <p className="text-gray-600">2014 - 2018</p>
           </div>
         </section>
