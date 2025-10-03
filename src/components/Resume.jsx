@@ -104,7 +104,7 @@ const Resume = () => {
                 <div class="experience-item">
                   <div class="experience-header">
                     <h4 class="experience-title">EKS Microservices</h4>
-                    <span class="experience-date">2025 - Present</span>
+                    <span class="experience-date">2024 - 2025</span>
                   </div>
                   <p class="experience-company">AltSchool Africa</p>
                   <ul>
@@ -118,7 +118,7 @@ const Resume = () => {
                 <div class="experience-item">
                   <div class="experience-header">
                     <h4 class="experience-title">Cloud Infrastructure Engineer</h4>
-                    <span class="experience-date">2025 - Present</span>
+                    <span class="experience-date">2024 - 2025</span>
                   </div>
                   <p class="experience-company">AltSchool Africa</p>
                   <ul>
@@ -131,7 +131,7 @@ const Resume = () => {
                   <div class="experience-item">
                   <div class="experience-header">
                     <h4 class="experience-title">S3 Buckets</h4>
-                    <span class="experience-date">2025 - Present</span>
+                    <span class="experience-date">2024 - 2025</span>
                   </div>
                   <p class="experience-company">AltSchool Africa</p>
                   <ul>
@@ -299,7 +299,7 @@ const Resume = () => {
             <div className="border-l-4 border-primary-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-xl font-semibold text-gray-800">EKS Microservices</h4>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2024 - 2025</span>
               </div>
               <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
               <ul className="text-gray-600 space-y-1">
@@ -313,7 +313,7 @@ const Resume = () => {
             <div className="border-l-4 border-gray-300 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-xl font-semibold text-gray-800">Cloud Infrastructure Engineer</h4>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2024 - 2025</span>
               </div>
               <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
               <ul className="text-gray-600 space-y-1">
@@ -328,7 +328,7 @@ const Resume = () => {
             <div className="border-l-4 border-primary-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-xl font-semibold text-gray-800">S3 Buckets</h4>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2025 - Present</span>
+                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">2024 - 2025</span>
               </div>
               <p className="text-primary-600 font-medium mb-3">AltSchool Africa</p>
               <ul className="text-gray-600 space-y-1">
@@ -358,7 +358,7 @@ const Resume = () => {
             <div className="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
               <span className="text-2xl">⚡</span>
               <div>
-                <h4 className="font-semibold text-gray-800">3+ Projects</h4>
+                <h4 className="font-semibold text-gray-800">5+ Projects</h4>
                 <p className="text-sm text-gray-600">Successfully delivered solutions</p>
               </div>
             </div>
