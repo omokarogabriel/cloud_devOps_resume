@@ -4,12 +4,204 @@ const Resume = () => {
   const resumeRef = useRef();
 
   const downloadResume = () => {
-    const element = document.createElement('a');
-    element.href = '/resume.txt';
-    element.download = 'Gabriel_Omokaro_Resume.txt';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    // Create a new window for printing
+    const printWindow = window.open('', '_blank');
+    
+    if (printWindow) {
+      const styles = `
+        <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 800px; margin: 0 auto; background: white; }
+          .header { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 2rem; }
+          .header h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; }
+          .header h2 { font-size: 1.25rem; opacity: 0.9; margin-bottom: 1rem; }
+          .contact-info { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem; font-weight: bold; }
+          .content { padding: 2rem; }
+          .section { margin-bottom: 2rem; }
+          .section h3 { font-size: 1.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem; border-bottom: 2px solid #2563eb; padding-bottom: 0.5rem; }
+          .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1rem; }
+          .skill-category { background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #2563eb; }
+          .skill-category h4 { font-weight: 600; margin-bottom: 0.75rem; }
+          .skill-category ul { list-style: none; }
+          .skill-category li { margin-bottom: 0.25rem; font-size: 0.875rem; }
+          .experience-item { margin-bottom: 1.5rem; padding-left: 1rem; border-left: 4px solid #2563eb; }
+          .experience-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem; }
+          .experience-title { font-size: 1.25rem; font-weight: 600; }
+          .experience-date { background: #f3f4f6; padding: 0.25rem 0.75rem; border-radius: 0.25rem; font-size: 0.875rem; }
+          .experience-company { color: #2563eb; font-weight: 500; margin-bottom: 0.75rem; }
+          .experience-item ul { margin-left: 1rem; }
+          .experience-item li { margin-bottom: 0.25rem; }
+          .achievements-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+          .achievement-item { background: #fef3c7; padding: 1rem; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+          .achievement-icon { font-size: 1.5rem; }
+          .achievement-title { font-weight: 600; }
+          .achievement-desc { font-size: 0.875rem; color: #6b7280; }
+          .certifications-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+          .cert-item { padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+          .cert-icon { font-size: 1.25rem; }
+          @media print { body { -webkit-print-color-adjust: exact; } }
+        </style>
+      `;
+      
+      const htmlContent = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Gabriel Omokaro - Resume</title>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+          ${styles}
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>Gabriel Omokaro</h1>
+              <h2>DevOps & Cloud Engineer</h2>
+              <div class="contact-info">
+                <span>📧 gabrielomokaro@outlook.com</span>
+                <span>💼 linkedin.com/in/gabriel-omokaro-b6b57a32b</span>
+                <span>🔗 github.com/omokarogabriel</span>
+                <span>📍 Remote Available</span>
+              </div>
+            </div>
+            
+            <div class="content">
+              <div class="section">
+                <h3>Professional Summary</h3>
+                <p>DevOps and Cloud Engineer with <strong>1+ year</strong> of expertise in designing, implementing, and maintaining scalable cloud infrastructure. Specialized in automation, CI/CD pipelines, and Infrastructure as Code with a proven track record of achieving <strong>65.9% uptime</strong> and reducing deployment times by <strong>70%</strong>.</p>
+              </div>
+              
+              <div class="section">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                  <div class="skill-category">
+                    <h4>🌩️ Cloud Platforms</h4>
+                    <ul>
+                      <li>• AWS (Solutions Architect)</li>
+
+                    </ul>
+                  </div>
+                  <div class="skill-category">
+                    <h4>⚙️ DevOps Tools</h4>
+                    <ul>
+                      <li>• Docker & Kubernetes</li>
+                      <li>• Github Actions</li>
+                      <li>• Terraform & Ansible</li>
+                    </ul>
+                  </div>
+                  <div class="skill-category">
+                    <h4>📈 Monitoring</h4>
+                    <ul>
+
+                      <li>• CloudWatch</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="section">
+                <h3>Professional Experience</h3>
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h4 class="experience-title">EKS Microservices</h4>
+                    <span class="experience-date">2024 - 2025</span>
+                  </div>
+                  <p class="experience-company">AltSchool Africa</p>
+                  <ul>
+                    <li>• Deployed microservices architecture on Amazon EKS</li>
+                    <li>• Implemented Kubernetes orchestration with Helm charts</li>
+                    <li>• Configured CI/CD pipelines for automated deployments</li>
+                    <li>• View Project Repository: github.com/omokarogabriel/eks_microservices</li>
+                  </ul>
+                </div>
+                
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h4 class="experience-title">Cloud Infrastructure Engineer</h4>
+                    <span class="experience-date">2024 - 2025</span>
+                  </div>
+                  <p class="experience-company">AltSchool Africa</p>
+                  <ul>
+
+                    <li>• Implemented Infrastructure as Code using Terraform</li>
+
+                  </ul>
+                </div>
+
+                  <div class="experience-item">
+                  <div class="experience-header">
+                    <h4 class="experience-title">S3 Buckets</h4>
+                    <span class="experience-date">2024 - 2025</span>
+                  </div>
+                  <p class="experience-company">AltSchool Africa</p>
+                  <ul>
+
+                  <li>• Creating a public static website with permission and CloudFront </li>
+                  <li>• Creating a private s3 bucket with get,put permission and no delete</li>
+                  <li>• Creating a private s3 bucket with list only permission and no delete </li>
+                  <li>• View Project Repository: github.com/omokarogabriel/Third-semester-assessment</li>
+                  </ul>
+                </div>
+
+              </div>
+              
+              <div class="section">
+                <h3>Key Achievements</h3>
+                <div class="achievements-grid">
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🏆</span>
+                    <div>
+                      <h4 class="achievement-title">99.9% Uptime</h4>
+                      <p class="achievement-desc">Critical infrastructure availability</p>
+                    </div>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">⚡</span>
+                    <div>
+                      <h4 class="achievement-title">5+ Projects</h4>
+                      <p class="achievement-desc">Successfully delivered solutions</p>
+                    </div>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">💰</span>
+                    <div>
+                      <h4 class="achievement-title">40% Cost Reduction</h4>
+                      <p class="achievement-desc">Cloud spending optimization</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+              <div class="section">
+                <h3>Certifications</h3>
+              </div>
+              
+              <div class="section">
+                <h3>Education</h3>
+                <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem;">
+                  <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Higher Diploma in Computer Science</h4>
+                  <p style="color: #2563eb; font-weight: 500; margin-bottom: 0.25rem;">Yaba College of Technology</p>
+                  <p style="color: #6b7280;">2014 - 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+        </html>
+      `;
+      
+      printWindow.document.write(htmlContent);
+      printWindow.document.close();
+      
+      // Wait for content to load then trigger print
+      printWindow.onload = () => {
+        setTimeout(() => {
+          printWindow.print();
+          printWindow.close();
+        }, 500);
+      };
+    }
   };
 
   return (
