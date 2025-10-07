@@ -7,8 +7,6 @@ const Resume = () => {
     const element = document.createElement('a');
     element.href = '/resume.txt';
     element.download = 'Gabriel_Omokaro_Resume.txt';
-    element.target = '_blank';
-    element.rel = 'noopener noreferrer';
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
