@@ -29,7 +29,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Cloud Architecture</li>
-              <li>DevOps Consulting</li>
+              {/* <li>DevOps Consulting</li> */}
               <li>Infrastructure as Code</li>
               <li>CI/CD Implementation</li>
               <li>Monitoring & Observability</li>
@@ -42,8 +42,8 @@ const Footer = () => {
               <li>AWS, Azure, GCP</li>
               <li>Docker & Kubernetes</li>
               <li>Terraform & Ansible</li>
-              <li>Jenkins & GitLab CI</li>
-              <li>Prometheus & Grafana</li>
+              {/* <li>Jenkins & GitLab CI</li> */}
+              {/* <li>Prometheus & Grafana</li> */}
             </ul>
           </div>
         </div>
