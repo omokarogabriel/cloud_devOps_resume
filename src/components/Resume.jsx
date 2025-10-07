@@ -4,69 +4,12 @@ const Resume = () => {
   const resumeRef = useRef();
 
   const downloadResume = () => {
-    // Create downloadable text file for mobile compatibility
-    const resumeContent = `GABRIEL OMOKARO
-DevOps & Cloud Engineer
-
-CONTACT INFORMATION
-Email: gabrielomokaro@outlook.com
-LinkedIn: linkedin.com/in/gabriel-omokaro-b6b57a32b
-GitHub: github.com/omokarogabriel
-Location: Remote Available
-
-PROFESSIONAL SUMMARY
-DevOps and Cloud Engineer with 1+ year of expertise in designing, implementing, and maintaining scalable cloud infrastructure. Specialized in automation, CI/CD pipelines, and Infrastructure as Code with a proven track record of achieving 65.9% uptime and reducing deployment times by 70%.
-
-TECHNICAL SKILLS
-
-Cloud Platforms:
-• AWS (Solutions Architect)
-
-DevOps Tools:
-• Docker & Kubernetes
-• GitHub Actions
-• Terraform & Ansible
-
-Monitoring:
-• CloudWatch
-
-PROFESSIONAL EXPERIENCE
-
-EKS Microservices | AltSchool Africa | 2024 - 2025
-• Deployed microservices architecture on Amazon EKS
-• Implemented Kubernetes orchestration with Helm charts
-• Configured CI/CD pipelines for automated deployments
-• View Project Repository: github.com/omokarogabriel/eks_microservices
-
-Cloud Infrastructure Engineer | AltSchool Africa | 2024 - 2025
-• Implemented Infrastructure as Code using Terraform
-
-S3 Buckets | AltSchool Africa | 2024 - 2025
-• Creating a public static website with permission and CloudFront
-• Creating a private s3 bucket with get,put permission and no delete
-• Creating a private s3 bucket with list only permission and no delete
-• View Project Repository: github.com/omokarogabriel/Third-semester-assessment
-
-KEY ACHIEVEMENTS
-• 99.9% Uptime - Critical infrastructure availability
-• 5+ Projects - Successfully delivered solutions
-• 40% Cost Reduction - Cloud spending optimization
-
-EDUCATION
-Higher Diploma in Computer Science
-Yaba College of Technology | 2014 - 2018
-`;
-    
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
     const element = document.createElement('a');
-    element.href = url;
+    element.href = '/resume.txt';
     element.download = 'Gabriel_Omokaro_Resume.txt';
-    element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-    window.URL.revokeObjectURL(url);
   };
 
   return (
