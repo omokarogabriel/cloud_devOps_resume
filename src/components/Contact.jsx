@@ -4,7 +4,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     message: ''
   });
 
@@ -15,102 +14,25 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    try {
-      const response = await fetch('https://formspree.io/f/xdkwzald', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        alert('There was an error sending your message. Please try again.');
-      }
-    } catch (error) {
-      alert('There was an error sending your message. Please try again.');
-    }
+    // Form submission logic here
   };
 
   return (
-    <section id="contact" className="section-padding bg-gray-50">
-      <div className="container-custom">
+    <section id="contact" className="py-20 bg-white">
+      <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
-          </h2>
+          <h2 className="text-3xl font-light text-gray-900 mb-4">Get In Touch</h2>
+          <div className="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to discuss your next cloud or DevOps project? Let's build something amazing together.
+            Ready to discuss your next project? Let's connect and explore how we can work together.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Let's Connect
-              </h3>
-              <p className="text-gray-600 mb-8">
-                I'm always interested in discussing new opportunities, challenging projects, 
-                and innovative cloud solutions. Feel free to reach out!
-              </p>
-            </div>
-
-            <div className="space-y-12">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">gabrielomokaro@outlook.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/gabriel-omokaro-b6b57a32b/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
-                    gabriel-omokaro-b6b57a32b
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">GitHub</h4>
-                  <a href="https://github.com/omokarogabriel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
-                    omokarogabriel
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-xl">📍</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">Available for remote work worldwide</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-xl shadow-sm">
-            <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <form onSubmit={handleSubmit} action="https://formspree.io/f/xdkwzald" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
@@ -122,8 +44,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="Your name"
+                  className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-colors"
                 />
               </div>
 
@@ -138,24 +59,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="Project discussion"
+                  className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-colors"
                 />
               </div>
 
@@ -166,19 +70,66 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
+                  rows="5"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="Tell me about your project..."
+                  className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-colors resize-none"
                 ></textarea>
               </div>
 
-              <button type="submit" className="w-full btn-primary">
+              <button
+                type="submit"
+                className="w-full px-8 py-3 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"
+              >
                 Send Message
               </button>
             </form>
+          </div>
+
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-medium text-gray-900 mb-4">Contact Information</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-sm font-medium text-gray-700">Email</p>
+                  <a href="mailto:gabrielomokaro@outlook.com" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    gabrielomokaro@outlook.com
+                  </a>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-gray-700">LinkedIn</p>
+                  <a 
+                    href="https://www.linkedin.com/in/gabriel-omokaro-b6b57a32b/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    gabriel-omokaro-b6b57a32b
+                  </a>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-gray-700">GitHub</p>
+                  <a 
+                    href="https://github.com/omokarogabriel" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    omokarogabriel
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-medium text-gray-900 mb-4">Let's Connect</h3>
+              <p className="text-gray-600 leading-relaxed">
+                I'm always interested in discussing new opportunities, 
+                innovative projects, and ways to help organizations 
+                optimize their cloud infrastructure.
+              </p>
+            </div>
           </div>
         </div>
       </div>
