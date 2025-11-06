@@ -11,17 +11,15 @@ const Resume = () => {
   };
 
   return (
-    <section id="resume" className="py-20 bg-white">
+    <section className="py-20">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-4">Resume</h2>
-          <div className="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 mb-8">Download my complete resume to learn more about my experience and qualifications.</p>
+          <h2 className="text-3xl font-bold text-primary-900 mb-6">Looking for more details?</h2>
           <button
             onClick={downloadResume}
-            className="px-8 py-3 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex px-8 py-3.5 bg-primary-600 text-white font-semibold rounded-lg transition-all duration-200 hover:bg-primary-700 hover:shadow-medium"
           >
-            Download Resume
+            Download Full Resume
           </button>
         </div>
       </div>

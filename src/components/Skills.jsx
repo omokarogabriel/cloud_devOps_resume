@@ -1,53 +1,87 @@
 import React from 'react';
+import { FaAws, FaDocker, FaGitAlt, FaLinux, FaGithub, FaTools } from 'react-icons/fa';
+import { SiKubernetes, SiTerraform, SiAnsible, SiJenkins, SiPrometheus, SiGrafana } from 'react-icons/si';
 
 const Skills = () => {
-  const skills = [
-    { name: 'AWS', level: 90 },
-    { name: 'Docker', level: 85 },
-    { name: 'Kubernetes', level: 80 },
-    { name: 'Terraform', level: 85 },
-    { name: 'GitHub Actions', level: 80 },
-    { name: 'Ansible', level: 75 },
+  const skillCategories = [
+    {
+      title: 'Cloud & Infrastructure',
+      skills: [
+        { name: 'AWS', icon: FaAws, proficiency: 'Advanced' },
+        { name: 'Kubernetes', icon: SiKubernetes, proficiency: 'Advanced' },
+        { name: 'Docker', icon: FaDocker, proficiency: 'Advanced' },
+      ]
+    },
+    {
+      title: 'DevOps & Automation',
+      skills: [
+        { name: 'Terraform', icon: SiTerraform, proficiency: 'Advanced' },
+        { name: 'Ansible', icon: SiAnsible, proficiency: 'Advanced' },
+        { name: 'GitHub Actions', icon: FaGithub, proficiency: 'Advanced' },
+      ]
+    },
+    {
+      title: 'Monitoring & Logging',
+      skills: [
+        { name: 'Prometheus', icon: SiPrometheus, proficiency: 'Advanced' },
+        { name: 'Grafana', icon: SiGrafana, proficiency: 'Advanced' },
+      ]
+    },
+    {
+      title: 'Version Control & CI/CD',
+      skills: [
+        { name: 'Git', icon: FaGitAlt, proficiency: 'Advanced' },
+        { name: 'GitHub', icon: FaGithub, proficiency: 'Advanced' },
+
+      ]
+    }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-light text-gray-900 mb-4">Technical Skills</h2>
-          <div className="w-12 h-px bg-gray-900 mx-auto"></div>
+    <section id="skills" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary-900 mb-4">Technical Skills</h2>
+          <div className="w-24 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-primary-600 max-w-2xl mx-auto">
+            Proficient in modern DevOps practices and cloud technologies, with a focus on automation and scalability
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {skills.map((skill, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-gray-900">{skill.name}</span>
-                <span className="text-sm text-gray-500">{skill.level}%</span>
+        <div className="grid gap-16 md:gap-20">
+          {skillCategories.map((category, index) => (
+            <div key={index} className="space-y-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-primary-900 mb-2">{category.title}</h3>
+                <div className="w-20 h-1 bg-primary-600 mx-auto rounded-full"></div>
               </div>
-              <div className="w-full bg-gray-200 h-2">
-                <div 
-                  className="bg-gray-900 h-2 transition-all duration-1000 ease-out"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
+                {category.skills.map((skill, skillIndex) => (
+                  <div
+                    key={skillIndex}
+                    className="bg-white p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-1"
+                  >
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <skill.icon className="w-12 h-12 text-primary-600" />
+                      <div>
+                        <h4 className="text-lg font-semibold text-primary-900 mb-2">{skill.name}</h4>
+                        <span className="text-sm font-medium text-primary-600 bg-primary-50 px-4 py-1.5 rounded-full">
+                          {skill.proficiency}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <h3 className="font-medium text-gray-900 mb-4">Cloud Platforms</h3>
-            <p className="text-gray-600">AWS, Azure, GCP</p>
-          </div>
-          <div>
-            <h3 className="font-medium text-gray-900 mb-4">DevOps Tools</h3>
-            <p className="text-gray-600">Docker, Kubernetes, Terraform</p>
-          </div>
-          <div>
-            <h3 className="font-medium text-gray-900 mb-4">Monitoring</h3>
-            <p className="text-gray-600">CloudWatch, Prometheus</p>
-          </div>
+        <div className="mt-20 text-center">
+          <p className="text-lg text-primary-600 max-w-3xl mx-auto leading-relaxed">
+            Strong background in implementing end-to-end DevOps solutions, including CI/CD pipelines, 
+            infrastructure as code, and maintaining high-availability systems.
+          </p>
         </div>
       </div>
     </section>

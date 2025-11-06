@@ -39,10 +39,17 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+      boxShadow: {
+        'soft': '0 2px 15px rgba(0, 0, 0, 0.05)',
+        'medium': '0 4px 20px rgba(0, 0, 0, 0.08)',
+        'large': '0 6px 30px rgba(0, 0, 0, 0.12)',
+      },
       animation: {
+        'fadeIn': 'fadeIn 0.5s ease-in',
+        'slideUp': 'slideUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.6s ease-out',
-        'float': 'float 3s ease-in-out infinite',
+        'float': 'float 3s ease-in-out infinite'
       },
       keyframes: {
         fadeIn: {
@@ -54,14 +61,9 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
+          '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         },
-      },
-      boxShadow: {
-        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
-        'medium': '0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-        'large': '0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.04)',
       },
     },
   },
