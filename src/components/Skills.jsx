@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAws, FaDocker, FaGitAlt, FaLinux, FaGithub, FaTools } from 'react-icons/fa';
-import { SiKubernetes, SiTerraform, SiAnsible, SiJenkins, SiPrometheus, SiGrafana } from 'react-icons/si';
+import { FaAws, FaDocker, FaGitAlt, FaLinux, FaGithub, FaTools, FaNetworkWired, FaLock, FaEye } from 'react-icons/fa';
+import { SiKubernetes, SiTerraform, SiAnsible, SiJenkins, SiPrometheus, SiGrafana, SiWireguard } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
@@ -10,6 +10,15 @@ const Skills = () => {
         { name: 'AWS', icon: FaAws, proficiency: 'Advanced' },
         { name: 'Kubernetes', icon: SiKubernetes, proficiency: 'Advanced' },
         { name: 'Docker', icon: FaDocker, proficiency: 'Advanced' },
+        { name: 'Karpenter', icon: FaTools, proficiency: 'Advanced', description: 'Node Autoscaling' },
+        { name: 'Cilium', icon: FaNetworkWired, proficiency: 'Advanced', description: 'CNI & kube-proxy replacement' },
+      ]
+    },
+    {
+      title: 'Networking & Security',
+      skills: [
+        { name: 'Hubble', icon: FaEye, proficiency: 'Advanced', description: 'Network Observability' },
+        { name: 'WireGuard', icon: SiWireguard, proficiency: 'Advanced', description: 'Encryption' },
       ]
     },
     {
@@ -55,7 +64,7 @@ const Skills = () => {
                 <h3 className="text-2xl font-bold text-primary-900 mb-2">{category.title}</h3>
                 <div className="w-20 h-1 bg-primary-600 mx-auto rounded-full"></div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
@@ -65,6 +74,9 @@ const Skills = () => {
                       <skill.icon className="w-12 h-12 text-primary-600" />
                       <div>
                         <h4 className="text-lg font-semibold text-primary-900 mb-2">{skill.name}</h4>
+                        {skill.description && (
+                          <p className="text-xs text-gray-500 mb-2">{skill.description}</p>
+                        )}
                         <span className="text-sm font-medium text-primary-600 bg-primary-50 px-4 py-1.5 rounded-full">
                           {skill.proficiency}
                         </span>
@@ -79,8 +91,9 @@ const Skills = () => {
 
         <div className="mt-20 text-center">
           <p className="text-lg text-primary-600 max-w-3xl mx-auto leading-relaxed">
-            Strong background in implementing end-to-end DevOps solutions, including CI/CD pipelines, 
-            infrastructure as code, and maintaining high-availability systems.
+            Strong background in implementing end-to-end DevOps solutions with Cilium CNI for networking, 
+            Hubble for observability, WireGuard for encryption, and Karpenter for intelligent node autoscaling. 
+            Expertise in CI/CD pipelines, infrastructure as code, and maintaining high-availability systems.
           </p>
         </div>
       </div>
