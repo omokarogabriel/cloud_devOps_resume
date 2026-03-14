@@ -3,12 +3,18 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   const downloadResume = () => {
-    const element = document.createElement('a');
-    element.href = '/resume.pdf';
-    element.download = 'Gabriel_Omokaro_Resume.pdf';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    const resumeEl = document.getElementById('printable-resume');
+    if (resumeEl) {
+      import('html2pdf.js').then(({ default: html2pdf }) => {
+        html2pdf().set({
+          margin: 0,
+          filename: 'Gabriel_Omokaro_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true },
+          jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        }).from(resumeEl).save();
+      });
+    }
   };
 
   return (
