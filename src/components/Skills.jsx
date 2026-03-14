@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAws, FaDocker, FaGitAlt, FaLinux, FaGithub, FaTools, FaNetworkWired, FaLock, FaEye } from 'react-icons/fa';
-import { SiKubernetes, SiTerraform, SiAnsible, SiJenkins, SiPrometheus, SiGrafana, SiWireguard } from 'react-icons/si';
+import { FaAws, FaDocker, FaGitAlt, FaGithub, FaTools, FaNetworkWired, FaEye } from 'react-icons/fa';
+import { SiKubernetes, SiTerraform, SiAnsible, SiPrometheus, SiGrafana, SiWireguard } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
